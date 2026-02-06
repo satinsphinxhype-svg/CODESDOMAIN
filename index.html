@@ -196,8 +196,8 @@ function getPos(e){
 function end(){ d=false; }
 
 /* mouse */
-canvas.addEventListener("mousedown",e=>start(e.clientX,e.clientY));
-canvas.addEventListener("mousemove",e=>move(e.clientX,e.clientY));
+canvas.addEventListener("mousedown",start);
+canvas.addEventListener("mousemove",move);
 canvas.addEventListener("mouseup",end);
 
 /* touch */
